@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require('path');
 const ejsMate = require('ejs-mate');
-const database = require('./database/database');
+const page = require('./routes/index');
 const app = express();
 
 
@@ -10,18 +10,8 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'))
 app.use(express.static(__dirname + '/public'));
   
+app.use("/", page);
 
-app.get('/', (req, res) => {
-
-    
-
-   req.render('index', {title: 'Main Page', relevant_data: results})
-        
-    
-    
-    
-
-});
 
 const prt = 3030
 app.listen(prt,() => {
