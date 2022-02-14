@@ -1,28 +1,70 @@
+<head>
+
+
+    <link href="/cs/style.css" rel="stylesheet">
+
+
+
+</head>
+
+
 <div>
 
     <form action="/submit_shift" method="post"> 
 <h4>Enter your shift recording please</h4>
-<input placeholder="shift date" type="date"></input>
+<input placeholder="shift date" type="date" name="shift_date" ></input>
 <label>Shift Date</label>
 <br>
-<input placeholder="from" type="time"></input>
+<input placeholder="from" type="time" name="time_from"></input>
 <label>Time from</label>
 <br>
-<input placeholder="to" type="time"></input>
+<input placeholder="to" type="time" name="time_to"></input>
 <label>Time to</label>
 <br>
-<input placeholder="£0"></input>
+<input placeholder="£0" name="hour_rate"></input>
 <label>Hourly rate</label>
 <br>
-<input type="time"></input>
+<input type="time" name="clocked_in"></input>
 <label>Clocked in </label>
 <br>
-<input type="time"></input>
+<input type="time" name="clocked_out"></input>
 <label>Clocked out </label>
 <br>
  <input type="submit" value="Submit">
 
 
     </form>
+
+</div>
+
+
+
+<div>
+    <h5>Your Shifts:</h5>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Time from</th>
+    <th>Time to</th>
+    <th>Hourly rate</th>
+    <th>Clocked in</th>
+    <th>Clocked out</th>
+    <th>TOTAL £</th>
+    <th>ID</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+
+
 
 </div>
